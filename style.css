@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    height: 10vh;
+    max-width: 100%;
+    background: linear-gradient(45deg, rgb(178, 45, 255), rgb(255, 178, 36) 60%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 5vh;
+    list-style: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
