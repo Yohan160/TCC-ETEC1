@@ -1,30 +1,415 @@
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    overflow-x: hidden;
+    position: relative;
 }
 
 .navbar{
-    height: 10vh;
-    max-width: 100%;
-    background: linear-gradient(45deg, rgb(178, 45, 255), rgb(255, 178, 36) 60%);
+    height: 13vh;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(203, 16, 255), rgb(255, 169, 20) 60%);
+    position: fixed;
     display: flex;
-    justify-content: end;
     align-items: center;
+    justify-content: end;
+    z-index: 10;
 }
 
 .nav-list{
     display: flex;
-    gap: 5vh;
+    align-items: center;
+    gap: 1.4em;
+    margin-right: 5%;
+}
+
+.Logo{
+    position: absolute;
+    left: 7%;
+}
+
+.Logo1{
+    width: 12vh;
+    height: auto;
+    display: flex;
+}
+
+.nav-item{
     list-style: none;
 }
 
 .nav-item a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    transition: 500ms;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: rgb(233, 67, 255);
+}
+
+#Colabore{
+    width: 10em;
+    height: 3.5em;
+    background-color: rgb(255, 0, 234); 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4vh;
+    transition: 500ms;
+}
+
+#Colabore:hover{
+    background-color: rgb(213, 77, 255);
+    transform: scale(1.1);
+}
+
+.Tela-inicial {
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    box-shadow: 0px 7px 6px black;
+}
+
+
+.Inicio{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 10;
+}
+
+.Logo-inicio{
+    position: absolute;
+    width: 22em;
+    top: 34vh;
+}
+
+.desc-inicio{
+    justify-content: space-between;
+    position: absolute;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    max-width: 130vh;
+    text-align: center;
+    height: 52vh;
+    background: linear-gradient( #ffbb28e9, rgba(255, 173, 66, 0.893));
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc-inicio p{
+    max-width: 85%;
+}
+
+.desc-inicio h2{
+    font-size: clamp(2rem, 15vw, 4.5rem);
+    margin-bottom: 1px;
+}
+
+.desc-inicio button{
+    margin: 2vh;
+    width: clamp(10vw, 15vw, 25rem);
+    height: 10vh;
+    background-color: rgb(197, 49, 255);
+    font-weight: 600;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.redes-sociais{
+  height: 7vw;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd117d7;
+  gap: 5vh;
+}
+
+.redes-sociais a{
+  color: rgb(0, 0, 0);
+  font-size: 8vh;
+  transition: 400ms ease-in-out;
+}
+
+.redes-sociais a:hover{
+  transform: scale(1.1);
+}
+
+.facebook { color: #0067ed; }
+.whatsapp { color: #08ef00; }
+.instagram {
+  background: linear-gradient(#ee00ff,rgb(255, 162, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Nossas-aulas{
+    width: 100vh;
+}
+
+.carrossel-pai{
+    position: absolute;
+    right: 10vh;
+    top: 130vh;
+    height: 150vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.carrossel-imagens{
+    z-index: -1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: Carrossel-subir 15s linear infinite;
+}
+
+@keyframes Carrossel-subir{
+  0%{
+    transform: translateY(-120px);
+  }
+
+  100%{
+    transform: translateY(-1100px);
+  }
+}
+
+.carrossel-imagens img{
+  margin-top: -100px;
+  border-radius: 10px;
+  max-width: 270px;
+  transition: transform 800ms;
+}
+
+.C2-1{
+  margin-left: 300px;
+}
+
+.C2-3{
+  margin-left: 300px;
+}
+
+.Nossas-aulas2{
+    max-width: 40rem;
+    margin-top: 5vw;
+    margin-left: 7vw;
+}
+
+.Nossas-aulas2 h1{
+  font-size: 3.8rem;
+  margin-bottom: 1vh;
+  background: linear-gradient(30deg, #ffa10a, rgb(214, 9, 255) 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Nossas-aulas2 p{
+    font-size: 1.9rem;
+    width: 26rem;
+}
+
+.Nossas-aulas2 ul{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+
+}
+
+.Nossas-aulas2 button{
+    margin-top: 2vw;
+    height: 12vh;
+    width: 60%;
+    font-size: 2rem;
+    color: white;
+    background-color: #c906ff;
+    border-radius: 4px;
+    transition: 700ms ease-in-out;
+}
+
+.Nossas-aulas2 button:hover{
+    transform: scale(1.03);
+    box-shadow: 3px 3px 3px black;
+    background-color: #ff2af8;
+}
+
+.Impacto {
+    position: relative;
+    margin-top: 10vw;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url("img/Mídia (20).jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.desc-impacto{
+    position: absolute;
+    height: 100%;
+    width: 50vw;
+    background-color: #ffbb4ecf;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+}
+
+.desc-impacto h1{
+    max-width: 100%;
+    margin: 2vh;
+    font-size: clamp(1.8rem, 4vw, 4rem);
+      
+}
+
+.desc-impacto hr{
+    width: 99.8%;
+}
+
+.desc-impacto p{
+    margin-top: 2vh;
+    max-width: 85%;
+    font-size: clamp(0.9rem, 2.5vw, 2rem);
+      
+}
+
+.desc-impacto button{
+    margin-top: 2vw;
+    height: 7vw;
+    width: 50vh;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    background-color: #ee00ff;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.desc-impacto button:hover{
+    background-color: #c906ff;
+    transform: scale(1.1);
+}
+
+.Como-ajudar{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    flex-direction: column;
+    font-size: rem;
+}
+
+.Como-ajudar h1{
+    background: linear-gradient(90deg, rgb(227, 0, 247), rgb(255, 210, 10) 99%);
+    font-size: 40px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-ajuda{
+    margin: 2vh;
+    font-size: clamp(0.8rem, 5vw, 2rem);
+}
+
+.container-fc{
+    display: flex;
+    gap: 2rem;
+}
+
+.forma-colaborar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh;
+    height: 47vh;
+    width: 35vh;
+    background-color: #ffaf2e;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 23px;
+    font-weight: 600;
+    transition: 800ms ease;
+}
+
+.forma-colaborar h2{
+    color: white;
+    font-size: 2rem;
+}
+
+.forma-colaborar img{
+    max-width: 50%;
+}
+
+.forma-colaborar:hover{
+    background-color: #c45fff;
+    transform: scale(1.05);
+}
+
+.Como-ajudar button{
+    margin: 5vh;
+    height: 12vh;
+    width: 45vh;
+    font-size: 1.5rem;
+    background-color: #ce1dff;
+    color: white;
+    border-radius: 0.5vw;
+    transition: 500ms ease;
+}
+
+.Como-ajudar button:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width:768px){
+    .navbar{
+        height: 7vh;
+    }
+    .nav-list{
+        display: none;
+    }
+    .Tela-inicial{
+        margin-top: 5vh;
+    }
+    .Logo1{
+        width: 5vh;
+    }
+    .Logo-inicio{
+        width: 7rem;
+        top: 14vh;
+    }
+    .desc-inicio{
+        max-width: 18rem;
+        font-size: 9px;
+        height: 8rem;
+        font-weight: 600;
+    }
+    .desc-inicio h2{
+        font-size: 20px;
+    }
+
+    .desc-inicio p{
+        max-width: 90%;
+    }
+
+    .desc-inicio button{
+        width: 15vh;
+        height: 5vh;
+        font-size: 0.5rem;
+    }
+    .redes-sociais{
+        display: none;
+    }
 }
