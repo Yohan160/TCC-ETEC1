@@ -96,9 +96,9 @@ body{
     justify-content: space-between;
     position: absolute;
     color: white;
-    max-width: 60%;
+    max-width: 70%;
     text-align: center;
-    height: 11%;
+    height: 10%;
     background: linear-gradient( #ffbb28e9, rgba(255, 173, 66, 0.893));
     font-size: clamp(1rem, 2.5vw, 2rem);
     display: flex;
@@ -214,7 +214,7 @@ height: clamp(10vh, 15vw, 20%);
 }
 
 .Nossas-aulas2 p{
-    font-size: 1.9rem;
+    font-size: 1.7em;
     width: 26rem;
 }
 
@@ -306,14 +306,14 @@ height: clamp(10vh, 15vw, 20%);
     justify-content: center;
     max-width: 100%;
     flex-direction: column;
-    font-size: rem;
+    text-align: center;
 }
 
 .Como-ajudar h1{
     background: linear-gradient(90deg, rgb(227, 0, 247), rgb(255, 210, 10) 99%);
     font-size: 40px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 .desc-ajuda{
@@ -323,6 +323,7 @@ height: clamp(10vh, 15vw, 20%);
 
 .container-fc{
     display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -331,8 +332,8 @@ height: clamp(10vh, 15vw, 20%);
     align-items: center;
     flex-direction: column;
     padding: 2vh;
-    height: 47vh;
-    width: 35vh;
+    height: 450px;
+    width: 40vh;
     background-color: #ffaf2e;
     text-align: center;
     border-radius: 0.5rem;
@@ -386,11 +387,11 @@ height: clamp(10vh, 15vw, 20%);
     }
     .desc-inicio{
         padding-top: 1vh;
-        height: 7%;
+        height: 4%;
         max-width: 80%;
         display: flex;
         justify-content: center;
-        font-size: 15px;
+        font-size: 14px;
     }
     .redes-sociais{
         display: none;
@@ -417,6 +418,21 @@ height: clamp(10vh, 15vw, 20%);
     .redes-sociais{
         display: none;
     }
+    .Nossas-aulas{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Nossas-aulas h1{
+        font-size: 3rem;
+    }
+    .Nossas-aulas2 p{
+        font-size: 1.3em;
+        width: 26rem;
+    }
+    .Nossas-aulas ul{
+        font-size: 1.1em;
+    }
     .desc-impacto{
         width: 60%;
     }
@@ -424,5 +440,8 @@ height: clamp(10vh, 15vw, 20%);
         width: 50%;
         height: 10%;
         font-size: 1rem;
+    }
+    .container-fc{
+        flex-direction: column;
     }
 }
