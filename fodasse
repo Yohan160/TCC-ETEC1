@@ -1,0 +1,41 @@
+
+@media (max-width:768px){
+    .navbar{
+        height: 7vh;
+    }
+    .nav-list{
+        display: none;
+    }
+    .Tela-inicial{
+        margin-top: 5vh;
+    }
+    .Logo1{
+        width: 5vh;
+    }
+    .Logo-inicio{
+        width: 7rem;
+        top: 14vh;
+    }
+    .desc-inicio{
+        max-width: 18rem;
+        font-size: 9px;
+        height: 8rem;
+        font-weight: 600;
+    }
+    .desc-inicio h2{
+        font-size: 20px;
+    }
+
+    .desc-inicio p{
+        max-width: 90%;
+    }
+
+    .desc-inicio button{
+        width: 15vh;
+        height: 5vh;
+        font-size: 0.5rem;
+    }
+    .redes-sociais{
+        display: none;
+    }
+}
